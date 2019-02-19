@@ -9,7 +9,7 @@ cp $BUILD_PATH $DEPLOY_PATH
 
 echo "> AWSProjectStudy.jar 교체"
 CP_JAR_PATH=$DEPLOY_PATH$JAR_NAME
-APPLICATION_JAR_NAME=AWSProjectStudy.jar
+APPLICATION_JAR_NAME=AWSProjectStudy-0.0.2.jar
 APPLICATION_JAR=$DEPLOY_PATH$APPLICATION_JAR_NAME
 
 ln -Tfs $CP_JAR_PATH $APPLICATION_JAR
@@ -22,7 +22,7 @@ then
   echo "> 현재 구동중인 애플리케이션이 없으므로 종료하지 않습니다."
 else
   echo "> kill -15 $CURRENT_PID"
-  kill -15 $CURRENT_PID
+  kill -9 $CURRENT_PID
   sleep 5
 fi
 
