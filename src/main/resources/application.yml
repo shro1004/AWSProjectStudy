@@ -1,8 +1,12 @@
 spring:
   profiles:
     active: local # 기본 환경 선택
-     
+
 endpoints:
+  hypermedia:
+    enabled: true
+  actuator:
+    enabled: true
   health:
     sensitive : false
 
