@@ -2,11 +2,9 @@ spring:
   profiles:
     active: local # 기본 환경 선택
      
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+endpoints:
+  health:
+    sensitive : false
 
 # local 환경
 ---
