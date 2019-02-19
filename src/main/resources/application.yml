@@ -3,8 +3,10 @@ spring:
     active: local # 기본 환경 선택
      
 management:
-  security:
-    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 # local 환경
 ---
