@@ -6,7 +6,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: health
 
 
 # local 환경
