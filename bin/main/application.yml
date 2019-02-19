@@ -1,6 +1,10 @@
 spring:
   profiles:
     active: local # 기본 환경 선택
+     
+management:
+  security:
+    enabled: false
 
 # local 환경
 ---
