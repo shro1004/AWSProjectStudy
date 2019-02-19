@@ -9,8 +9,11 @@ import com.lgcns.kyun.AWSProjectStudy.domain.posts.PostsRepository;
 import com.lgcns.kyun.AWSProjectStudy.dto.PostsSaveRequestDto;
 import com.lgcns.kyun.AWSProjectStudy.service.PostsService;
 
+import lombok.AllArgsConstructor;
+
 
 @RestController
+@AllArgsConstructor
 public class WebRestController {
 	
 	private PostsService postsService;
